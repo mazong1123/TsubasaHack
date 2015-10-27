@@ -1,0 +1,1421 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\TsubasaHack.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN_ICON           ICON                    "res\\ball.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 258, 79
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 天使之翼2ROM修改器"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         134,IDC_STATIC,"Static",SS_BITMAP,11,17,55,33
+    LTEXT           "TsubasaHack 1.1b 版",IDC_STATIC,77,10,119,8,SS_NOPREFIX
+    LTEXT           "作者:mazong1123\r\nE-mail:mazong1123img@163.com\r\n\r\n献给所有热爱天2的朋友，期待你们的Hack作品",IDC_STATIC,77,25,117,43,SS_SUNKEN
+    DEFPUSHBUTTON   "确定",IDOK,201,7,50,16,WS_GROUP
+END
+
+IDD_TSUBASAHACK_DIALOG DIALOGEX 0, 0, 494, 387
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "常规"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "打开文件",IDFILESELECT,437,7,50,15
+    EDITTEXT        IDC_FILENAMEBOX,7,7,315,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "球队修改",IDC_TEAMHACKGROUP,7,34,480,199
+    GROUPBOX        "球队选择",IDC_TEAMHACK_TEAMSELECTGROUP,19,50,98,157
+    GROUPBOX        "球员修改",IDC_TEAMHACK_PLAYERSELECTGROUP,130,49,347,157
+    COMBOBOX        IDC_TEAMSELECT,27,69,79,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "GK            2号            3号           4号           5号            6号",IDC_PLAYERNUM,137,64,331,8
+    COMBOBOX        IDC_PLAYER1,135,76,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PLAYER2,192,76,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PLAYER3,249,76,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PLAYER4,306,76,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PLAYER5,364,76,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PLAYER6,421,75,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "7号           8号            9号           10号          11号",IDC_PLAYERNUM2,135,94,331,8
+    COMBOBOX        IDC_PLAYER7,135,107,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PLAYER8,192,107,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PLAYER9,249,107,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PLAYER10,306,107,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PLAYER11,364,107,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "替补1       替补2       替补3          替补4         替补5",IDC_PLAYERNUM3,135,140,331,8
+    COMBOBOX        IDC_BENCHPLAYERGK1,136,153,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BENCHPLAYERGK2,192,153,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BENCHPLAYER1,249,153,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BENCHPLAYER2,306,153,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BENCHPLAYER3,364,153,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "替补6         替补7         替补8          替补GK1         替补GK2",IDC_PLAYERNUM4,135,171,331,8
+    COMBOBOX        IDC_BENCHPLAYER4,136,183,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BENCHPLAYER5,192,183,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BENCHPLAYER6,249,183,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BENCHPLAYER7,306,183,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BENCHPLAYER8,364,183,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "修改",IDONDECIDE,133,212,50,16
+    CONTROL         "",IDC_OFFLINE,"Static",SS_ETCHEDFRAME,132,130,344,1
+    PUSHBUTTON      "清空",IDC_RESET_BUTTON,263,212,50,16
+    COMBOBOX        IDC_SKINCLR_COMBO,84,264,24,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_HAIRCLR_COMBO,123,264,24,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SHIRTCLR_COMBO,162,264,24,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TROUSERSCLR_COMBO,201,264,24,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CHARACTERCLR_COMBO,15,264,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "人物颜色修改",IDC_STATIC,7,238,227,75
+    LTEXT           "人物选择\t 肤色      发色     上衣色    短裤色",IDC_CLR_STATIC,15,250,210,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,8,283,225,1
+    PUSHBUTTON      "修改",IDC_ONDECIDEDCLR_BUTTON,16,292,50,14
+    PUSHBUTTON      "清空",IDC_ONCLEARCLRBUTTON,176,292,50,14
+    GROUPBOX        "人物造型修改(修改守门员要慎重,有可能出错,最好选择未知脸型)",IDC_STATIC,243,238,244,75
+    COMBOBOX        IDC_CHARACTERFIGUER_COMBO,254,264,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FIGURESEL_COMBO,354,263,122,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           " 人物选择\t\t  脸型选择",IDC_FIGURE_STATIC,249,249,185,8
+    PUSHBUTTON      "修改",IDC_ONDECIDEDFIGURE_BUTTON,254,292,50,14
+    PUSHBUTTON      "清空",IDC_FIGURECLR_BUTTON,425,292,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,243,283,243,1
+    GROUPBOX        "GK必杀技修改(请务必按照GK1,GK2,GK3顺序修改,否则会出错)",IDC_STATIC,7,317,227,62
+    COMBOBOX        IDC_GKSEL1_COMBO,32,327,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GKSEL2_COMBO,32,344,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GKSEL3_COMBO,32,361,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "GK1",IDC_STATIC,11,329,13,8
+    LTEXT           "GK2",IDC_STATIC,11,345,13,8
+    LTEXT           "GK3",IDC_STATIC,11,362,13,8
+    COMBOBOX        IDC_GKSKL1_COMBO,110,327,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GKSKL2_COMBO,110,344,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GKSKL3_COMBO,110,361,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "修改",IDC_ONDECIDEDGK1_BUTTON,165,327,26,12
+    PUSHBUTTON      "清空",IDC_GKCLR1_BUTTON,199,327,26,12
+    PUSHBUTTON      "修改",IDC_ONDECIDEDGK2_BUTTON,165,344,26,12
+    PUSHBUTTON      "清空",IDC_GKCLR2_BUTTON,199,344,26,12
+    PUSHBUTTON      "修改",IDC_ONDECIDEDGK3_BUTTON,166,361,26,12
+    PUSHBUTTON      "清空",IDC_GKCLR3_BUTTON,199,361,26,12
+    LTEXT           "必杀",IDC_STATIC,87,329,17,8
+    LTEXT           "必杀",IDC_STATIC,87,346,17,8
+    LTEXT           "必杀",IDC_STATIC,87,363,17,8
+    GROUPBOX        "补丁",IDC_STATIC,241,317,246,61
+    EDITTEXT        IDC_PATCH1_EDIT,253,330,164,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PATCH2_EDIT,253,355,164,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "注入补丁",IDC_INJECT1_BUTTON,427,329,50,14
+    PUSHBUTTON      "注入补丁",IDC_INJECT2_BUTTON,427,355,50,14
+END
+
+IDD_PLAYERABILITY_DIALOG DIALOGEX 0, 0, 458, 242
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "能力"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PLAYERABILITY_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SORTASCENDING | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,444,206
+    PUSHBUTTON      "刷新",IDC_REFRESH_BUTTON,133,221,50,14
+    PUSHBUTTON      "全选",IDC_SELECTALL_BUTTON,261,221,50,14
+END
+
+IDD_CUSTOMIZE_DIALOG DIALOGEX 0, 0, 493, 380
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自定义"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "如果修改天使之翼2以外的游戏，请务必去掉'能力'选项卡中的所有选择",IDC_CUSTOMIZE_STATIC,7,7,344,10
+    CONTROL         "",IDC_CUSTOMIZE_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,24,417,274
+    PUSHBUTTON      "刷新列表",IDC_REFRESH_BUTTON,434,24,52,14
+    EDITTEXT        IDC_CUSTOMIZE_EDIT,7,309,479,64,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "mazong1123"
+            VALUE "FileDescription", "天使之翼2ROM修改器"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TsubasaHack.exe"
+            VALUE "LegalCopyright", "mazong1123"
+            VALUE "OriginalFilename", "TsubasaHack.exe"
+            VALUE "ProductName", "天使之翼2ROM修改器"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_TSUBASAHACK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 487
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 380
+    END
+
+    IDD_PLAYERABILITY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 451
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_CUSTOMIZE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 486
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 373
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TSUBASAHACK_DIALOG DLGINIT
+BEGIN
+    IDC_PLAYER1, 0x403, 7, 0
+0x6161, 0x6161, 0x6161, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3030, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3130, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3230, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3330, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3430, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3530, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3630, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3830, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4130, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4230, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4330, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4430, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4530, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4630, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4131, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4231, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4331, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4431, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4531, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4631, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4132, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4232, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4332, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4432, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4532, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4632, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4133, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4233, "\000" 
+    IDC_SKINCLR_COMBO, 0x403, 3, 0
+0x4333, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3030, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3130, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3230, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3330, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3430, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3530, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3630, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3830, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4130, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4230, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4330, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4430, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4530, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4630, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4131, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4231, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4331, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4431, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4531, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4631, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4132, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4232, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4332, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4432, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4532, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4632, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4133, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4233, "\000" 
+    IDC_HAIRCLR_COMBO, 0x403, 3, 0
+0x4333, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3030, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3130, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3230, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3330, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3430, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3530, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3630, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3830, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4130, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4230, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4330, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4430, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4530, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4630, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4131, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4231, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4331, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4431, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4531, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4631, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4132, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4232, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4332, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4432, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4532, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4632, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4133, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4233, "\000" 
+    IDC_SHIRTCLR_COMBO, 0x403, 3, 0
+0x4333, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3030, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3130, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3230, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3330, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3430, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3530, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3630, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3830, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4130, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4230, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4330, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4430, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4530, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4630, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4131, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4231, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4331, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4431, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4531, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4631, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4132, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4232, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4332, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4432, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4532, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4632, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4133, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4233, "\000" 
+    IDC_TROUSERSCLR_COMBO, 0x403, 3, 0
+0x4333, "\000" 
+    IDC_FIGURESEL_COMBO, 0x403, 19, 0
+0x3030, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xf3b4, 0xd5bf, 0xedd2, 
+"\000" 
+    IDC_FIGURESEL_COMBO, 0x403, 19, 0
+0x3130, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xf4d7, 0xb0d2, 0xfac2, 
+"\000" 
+    IDC_FIGURESEL_COMBO, 0x403, 19, 0
+0x3230, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xc2d0, 0xefcc, 0xb2cb, 
+"\000" 
+    IDC_FIGURESEL_COMBO, 0x403, 21, 0
+0x3330, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xa2c1, 0xa8bb, 0xd6d0, 
+0xdcb5, "\000" 
+    IDC_FIGURESEL_COMBO, 0x403, 19, 0
+0x3430, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xe7d4, 0xefcc, 0xcfb3, 
+"\000" 
+    IDC_FIGURESEL_COMBO, 0x403, 21, 0
+0x3530, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xb4c0, 0xfac9, 0xdcd5, 
+0xf8b1, "\000" 
+    IDC_FIGURESEL_COMBO, 0x403, 19, 0
+0x3630, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xafca, 0xe9c6, 0xcbc1, 
+"\000" 
+    IDC_FIGURESEL_COMBO, 0x403, 17, 0
+0x3730, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xd5c8, 0xf2cf, "\000" 
+    IDC_FIGURESEL_COMBO, 0x403, 17, 0
+0x3830, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xbdc6, 0xf1c3, "\000" 
+    IDC_FIGURESEL_COMBO, 0x403, 21, 0
+0x3930, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xd6c6, 0xdfb1, 0xb4b7, 
+0xceb4, "\000" 
+    IDC_FIGURESEL_COMBO, 0x403, 19, 0
+0x4130, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xeec0, 0xfac1, 0xc6d4, 
+"\000" 
+    IDC_FIGURESEL_COMBO, 0x403, 18, 0
+0x4230, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xb4ce, 0xaad6, 0x0031, 
+
+    IDC_FIGURESEL_COMBO, 0x403, 18, 0
+0x4330, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xb4ce, 0xaad6, 0x0032, 
+
+    IDC_FIGURESEL_COMBO, 0x403, 18, 0
+0x4430, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xb4ce, 0xaad6, 0x0033, 
+
+    IDC_FIGURESEL_COMBO, 0x403, 18, 0
+0x4530, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xb4ce, 0xaad6, 0x0034, 
+
+    IDC_FIGURESEL_COMBO, 0x403, 18, 0
+0x4630, 0xb226, 0xbfce, 0xd4bc, 0xd0ec, 0x2dcd, 0xb4ce, 0xaad6, 0x0035, 
+
+    IDC_GKSEL1_COMBO, 0x403, 10, 0
+0x3230, 0xc026, 0xc4d7, 0xcdc9, 0x00d0, 
+    IDC_GKSEL1_COMBO, 0x403, 10, 0
+0x3632, 0xc226, 0xb0fc, 0xc4ba, 0x00e1, 
+    IDC_GKSEL1_COMBO, 0x403, 12, 0
+0x3333, 0xd626, 0xced0, 0xccf7, 0xd2ab, 0x00bb, 
+    IDC_GKSEL1_COMBO, 0x403, 8, 0
+0x4630, 0xc926, 0xc6ad, 0x00e9, 
+    IDC_GKSEL1_COMBO, 0x403, 12, 0
+0x3132, 0xc826, 0xc1f4, 0xd4d6, 0xc8b4, 0x00fd, 
+    IDC_GKSEL1_COMBO, 0x403, 12, 0
+0x3232, 0xc826, 0xb5f4, 0xbdba, 0xbdf2, 0x00a1, 
+    IDC_GKSEL1_COMBO, 0x403, 20, 0
+0x4235, 0xbc26, 0xc5aa, 0xa1b5, 0xbaa4, 0xb6a3, 0xc4fb, 0xb5cf, 0xcbcf, 
+0x00b9, 
+    IDC_GKSEL1_COMBO, 0x403, 14, 0
+0x3936, 0xb626, 0xb5aa, 0xa1c2, 0xbfa4, 0xc08a, 0x00d5, 
+    IDC_GKSEL1_COMBO, 0x403, 12, 0
+0x3437, 0xb826, 0xc2f1, 0xb5b3, 0xcbcf, 0x00b9, 
+    IDC_GKSEL1_COMBO, 0x403, 10, 0
+0x3235, 0xbc26, 0xc8aa, 0xc7fb, 0x00d0, 
+    IDC_GKSEL1_COMBO, 0x403, 12, 0
+0x3034, 0xc826, 0xc1f4, 0xd4d6, 0xc8b4, 0x00fd, 
+    IDC_GKSEL1_COMBO, 0x403, 12, 0
+0x4334, 0xc826, 0xb5f4, 0xbdba, 0xbdf2, 0x00a1, 
+    IDC_GKSEL2_COMBO, 0x403, 10, 0
+0x3230, 0xc026, 0xc4d7, 0xcdc9, 0x00d0, 
+    IDC_GKSEL2_COMBO, 0x403, 10, 0
+0x3632, 0xc226, 0xb0fc, 0xc4ba, 0x00e1, 
+    IDC_GKSEL2_COMBO, 0x403, 12, 0
+0x3333, 0xd626, 0xced0, 0xccf7, 0xd2ab, 0x00bb, 
+    IDC_GKSEL2_COMBO, 0x403, 8, 0
+0x4630, 0xc926, 0xc6ad, 0x00e9, 
+    IDC_GKSEL2_COMBO, 0x403, 12, 0
+0x3132, 0xc826, 0xc1f4, 0xd4d6, 0xc8b4, 0x00fd, 
+    IDC_GKSEL2_COMBO, 0x403, 12, 0
+0x3232, 0xc826, 0xb5f4, 0xbdba, 0xbdf2, 0x00a1, 
+    IDC_GKSEL2_COMBO, 0x403, 20, 0
+0x4235, 0xbc26, 0xc5aa, 0xa1b5, 0xbaa4, 0xb6a3, 0xc4fb, 0xb5cf, 0xcbcf, 
+0x00b9, 
+    IDC_GKSEL2_COMBO, 0x403, 14, 0
+0x3936, 0xb626, 0xb5aa, 0xa1c2, 0xbfa4, 0xc08a, 0x00d5, 
+    IDC_GKSEL2_COMBO, 0x403, 12, 0
+0x3437, 0xb826, 0xc2f1, 0xb5b3, 0xcbcf, 0x00b9, 
+    IDC_GKSEL2_COMBO, 0x403, 10, 0
+0x3235, 0xbc26, 0xc8aa, 0xc7fb, 0x00d0, 
+    IDC_GKSEL2_COMBO, 0x403, 12, 0
+0x3034, 0xc826, 0xc1f4, 0xd4d6, 0xc8b4, 0x00fd, 
+    IDC_GKSEL2_COMBO, 0x403, 12, 0
+0x4334, 0xc826, 0xb5f4, 0xbdba, 0xbdf2, 0x00a1, 
+    IDC_GKSEL3_COMBO, 0x403, 10, 0
+0x3230, 0xc026, 0xc4d7, 0xcdc9, 0x00d0, 
+    IDC_GKSEL3_COMBO, 0x403, 10, 0
+0x3632, 0xc226, 0xb0fc, 0xc4ba, 0x00e1, 
+    IDC_GKSEL3_COMBO, 0x403, 12, 0
+0x3333, 0xd626, 0xced0, 0xccf7, 0xd2ab, 0x00bb, 
+    IDC_GKSEL3_COMBO, 0x403, 8, 0
+0x4630, 0xc926, 0xc6ad, 0x00e9, 
+    IDC_GKSEL3_COMBO, 0x403, 12, 0
+0x3132, 0xc826, 0xc1f4, 0xd4d6, 0xc8b4, 0x00fd, 
+    IDC_GKSEL3_COMBO, 0x403, 12, 0
+0x3232, 0xc826, 0xb5f4, 0xbdba, 0xbdf2, 0x00a1, 
+    IDC_GKSEL3_COMBO, 0x403, 20, 0
+0x4235, 0xbc26, 0xc5aa, 0xa1b5, 0xbaa4, 0xb6a3, 0xc4fb, 0xb5cf, 0xcbcf, 
+0x00b9, 
+    IDC_GKSEL3_COMBO, 0x403, 14, 0
+0x3936, 0xb626, 0xb5aa, 0xa1c2, 0xbfa4, 0xc08a, 0x00d5, 
+    IDC_GKSEL3_COMBO, 0x403, 12, 0
+0x3437, 0xb826, 0xc2f1, 0xb5b3, 0xcbcf, 0x00b9, 
+    IDC_GKSEL3_COMBO, 0x403, 10, 0
+0x3235, 0xbc26, 0xc8aa, 0xc7fb, 0x00d0, 
+    IDC_GKSEL3_COMBO, 0x403, 12, 0
+0x3034, 0xc826, 0xc1f4, 0xd4d6, 0xc8b4, 0x00fd, 
+    IDC_GKSEL3_COMBO, 0x403, 12, 0
+0x4334, 0xc826, 0xb5f4, 0xbdba, 0xbdf2, 0x00a1, 
+    IDC_GKSKL1_COMBO, 0x403, 14, 0
+0x3038, 0xb126, 0xd7a9, 0x28df, 0xf4c8, 0xd6c1, 0x0029, 
+    IDC_GKSKL1_COMBO, 0x403, 20, 0
+0x3138, 0xd026, 0xd7fd, 0xc6aa, 0xbecb, 0x28c8, 0xaabc, 0xfbc8, 0xd0c7, 
+0x0029, 
+    IDC_GKSKL1_COMBO, 0x403, 18, 0
+0x3238, 0xb626, 0xd7b7, 0xd0aa, 0xd2c7, 0x28c6, 0xadc0, 0xc1d0, 0x0029, 
+
+    IDC_GKSKL1_COMBO, 0x403, 22, 0
+0x3338, 0xbb26, 0xd3c3, 0xc6b0, 0xbecb, 0x28c8, 0xf1b8, 0xb3c2, 0xcfb5, 
+0xb9cb, 0x0029, 
+    IDC_GKSKL2_COMBO, 0x403, 14, 0
+0x3038, 0xb126, 0xd7a9, 0x28df, 0xf4c8, 0xd6c1, 0x0029, 
+    IDC_GKSKL2_COMBO, 0x403, 20, 0
+0x3138, 0xd026, 0xd7fd, 0xc6aa, 0xbecb, 0x28c8, 0xaabc, 0xfbc8, 0xd0c7, 
+0x0029, 
+    IDC_GKSKL2_COMBO, 0x403, 18, 0
+0x3238, 0xb626, 0xd7b7, 0xd0aa, 0xd2c7, 0x28c6, 0xadc0, 0xc1d0, 0x0029, 
+
+    IDC_GKSKL2_COMBO, 0x403, 22, 0
+0x3338, 0xbb26, 0xd3c3, 0xc6b0, 0xbecb, 0x28c8, 0xf1b8, 0xb3c2, 0xcfb5, 
+0xb9cb, 0x0029, 
+    IDC_GKSKL3_COMBO, 0x403, 14, 0
+0x3038, 0xb126, 0xd7a9, 0x28df, 0xf4c8, 0xd6c1, 0x0029, 
+    IDC_GKSKL3_COMBO, 0x403, 20, 0
+0x3138, 0xd026, 0xd7fd, 0xc6aa, 0xbecb, 0x28c8, 0xaabc, 0xfbc8, 0xd0c7, 
+0x0029, 
+    IDC_GKSKL3_COMBO, 0x403, 18, 0
+0x3238, 0xb626, 0xd7b7, 0xd0aa, 0xd2c7, 0x28c6, 0xadc0, 0xc1d0, 0x0029, 
+
+    IDC_GKSKL3_COMBO, 0x403, 22, 0
+0x3338, 0xbb26, 0xd3c3, 0xc6b0, 0xbecb, 0x28c8, 0xf1b8, 0xb3c2, 0xcfb5, 
+0xb9cb, 0x0029, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "打开(&O)",                      ID_OPEN
+        MENUITEM "退出(&E)",                      ID_EXIT
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "6502汇编指令查看器(&C)",             ID_ASMCHECK
+        MENUITEM "代码注入器(&I)",                   ID_INDJECT
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "帮助(&H)",                      ID_HELP
+        MENUITEM "关于(&A)",                      ID_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\Tsubasa.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 TsubasaHack(&A)..."
+    IDS_PROPERTY_CAPTION    "TsubasaHack"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM2               "弗卢米嫩塞"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM1               "圣保罗"
+    IDS_TEAMSTAR1           "123456789AB"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM3               "克里新斯"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM4               "格雷米奥"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM5               "帕尔梅拉斯"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM6               "桑托斯"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM7               "弗拉门戈"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM8               "南葛高校"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM9               "国见学院"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM10              "秋田商校"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM11              "立波高中"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM12              "武藏医大附属高中"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM13              "富良野"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM14              "东邦学园"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM15              "罗马"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM16              "乌拉圭"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM17              "汉堡"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM18              "全日本"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM19              "全日本青年"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM20              "叙利亚"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM21              "中国"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM22              "伊朗"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM23              "北朝鲜"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM24              "沙特阿拉伯"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM25              "韩国"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM26              "瓦斯科·达·伽马"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM27              "波兰青年"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM28              "英格兰青年"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM29              "苏联青年"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM30              "法兰西青年"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM31              "墨西哥青年"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM32              "意大利青年"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM33              "荷兰青年"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM34              "阿根廷青年"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM35              "西德青年"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM36              "巴西青年"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM37              "巴西青年2"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEAM00              "(无)"
+    IDS_TEAMSTAR0           " "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER1             "大空翼（つはさ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER2             "雷纳托（しナ－ト）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER3             "利马（リマ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER4             "马里尼（マリ－ニ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER5             "奴马（ヌマラゥ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER6             "多托尔（ドト－ル）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER7             "巴提斯塔（バチスタ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER8             "塔哈马塔（タハマタ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER9             "巴宾通（バビントン）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER10            "吉乌（ジウ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER11            "普拉通（プラトン）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER12            "浦边反次（ラらべ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER13            "岸田猛（きしだ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER14            "中山政男（なかやま）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER15            "森崎有三（もリさき）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER16            "高杉真吾（たかすぎ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER17            "岬太郎（みさき）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER18            "井泽守（いざわ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER19            "泷一（たき）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER2O            "石崎了（いしざき）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER21            "新田瞬（につた）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER22            "来生哲兵（きすぎ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER23            "和夫（まさお）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER24            "政夫（かずお）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER25            "佐野满（さの）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER26            "日向小次朗（ひゅぅが）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER27            "早田诚（そラだ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER28            "次藤洋（じとラ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER29            "松山光（まフやま）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER30            "反町一树（そリまち）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER31            "泽田勇（さゎだ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER32            "三杉淳（みすぎ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER33            "若林源三（わかはやし）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER34            "若岛津健（わかレまづ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER35            "萨托尔斯（サトルステギ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER36            "利贝里奥（リベリオ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER37            "达·席尔巴（ダ·シルバ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER38            "曼昂尼（メオンに）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER39            "托尼尼奥（トニ－ニョ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER40            "奈依（ネイ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER41            "扎加罗（ザガロ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER42            "迪胡塞乌（ディウセウ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER43            "卡洛斯·桑塔纳（カルロス）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER44            "桑塔马利诺（サンタマリヌ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER45            "朱托·里奥（ジエト－リオ）"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLAYER0             "(不修改)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TSHPROPERTY_CAPTION "天使之翼ROM修改器Ver 1.1b(By mazong1123)"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\TsubasaHack.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
